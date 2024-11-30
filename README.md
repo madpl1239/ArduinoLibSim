@@ -1,4 +1,4 @@
-# library simulation for Arduino: tinyGPSPLus, softwareSerial 
+![alt text](image.png)
 
 The code simulates two libraries for Arduino: tinyGPS++ and softwareSerial.<br />
 These libraries work on different systems (they are platform independent) and can be compiled using gcc or another compiler.<br />
