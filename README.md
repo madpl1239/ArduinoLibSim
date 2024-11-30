@@ -5,3 +5,14 @@ These libraries work on different systems (they are platform independent) and ca
 They do not require additional libraries for operation - for now:))<br /><br />
 I wrote these libraries to simulate the operation of Arduino with a GPS module, but without using the Arduino IDE.<br />
 It is only a loose simulation of these libraries and contains only a few methods necessary to simulate reading latitude and longitude from GPS:))
+<br /><br />
+**Compilation**
+<br />
+- mkdir build
+- cd build
+- cmake ../ -G "Unix Makefiles"
+<br />
+
+**Running**
+- type: tstGPS
+<br />
