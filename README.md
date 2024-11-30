@@ -10,9 +10,10 @@ It is only a loose simulation of these libraries and contains only a few methods
 <br />
 - mkdir build
 - cd build
-- cmake ../ -G "Unix Makefiles"
+- cmake ../ -G "Unix Makefiles" - for Linux
+- cmake ../ -G "MinGW Makefiles" - for Windows and mingw32/64 compilers
 <br />
 
 **Running**
-- type: tstGPS
+- type in terminal: tstGPS
 <br />
