@@ -39,8 +39,8 @@ int main(void)
 			std::cout << std::fixed << std::setprecision(7);
 			
 			std::cout << "Lat: " << kalmanLat 
-					  << ", Lng: " << kalmanLon 
-					  << std::endl;
+				  << ", Lng: " << kalmanLon 
+				  << std::endl;
 					  
 			gps.location.resetUpdate();
 		}
