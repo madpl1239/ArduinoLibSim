@@ -1,4 +1,6 @@
-# git ignore
+# git ignores
+
+# folders
 build
 
 # images
@@ -6,3 +8,6 @@ image.png
 
 # licenses
 LICENSE
+
+# executable
+tstGPS

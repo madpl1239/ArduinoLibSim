@@ -18,6 +18,7 @@ On this data, you can then implement in the main function, for example: algorith
 - cd build
 - cmake ../ -G "Unix Makefiles" - for Linux
 - cmake ../ -G "MinGW Makefiles" - for Windows and mingw32/64 compilers
+- cd ..
 <br />
 
 **Running**
