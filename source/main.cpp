@@ -13,6 +13,11 @@
 SoftwareSerial gpsSerial("./gps_data.txt", 50);
 TinyGPSPlus gps;
 
+double kalmanLat = 0.0;
+double kalmanLon = 0.0;
+double Plat = 0.0;
+double Plon = 0.0;
+
 
 int main(void)
 {
@@ -23,10 +28,17 @@ int main(void)
 		
 		if(gps.location.isUpdated())
 		{
+			double lat = gps.location.lat();
+			double lon = gps.location.lng();
+			
+			// apply Kalman filter
+			kalmanLat = kalmanFilter(lat, kalmanLat, Plat);
+			kalmanLon = kalmanFilter(lon, kalmanLon, Plon);
+			
 			std::cout << std::fixed << std::setprecision(7);
 			
-			std::cout << "Lat: " << gps.location.lat() 
-					  << ", Lng: " << gps.location.lng() 
+			std::cout << "Lat: " << kalmanLat 
+					  << ", Lng: " << kalmanLon 
 					  << std::endl;
 					  
 			gps.location.resetUpdate();
