@@ -9,6 +9,7 @@
 #include <iomanip>
 #include "tinyGPSPlus.hpp"
 #include "softwareSerial.hpp"
+#include "kalman.hpp"
 
 SoftwareSerial gpsSerial("./gps_data.txt", 50);
 TinyGPSPlus gps;
