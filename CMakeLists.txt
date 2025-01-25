@@ -1,7 +1,7 @@
 # CMakeLists.txt for tstGPS
 # 28-11-2024 by madpl
 
-cmake_minimum_required(VERSION 3.30)
+cmake_minimum_required(VERSION 3.10)
 project(tstGPS)
 add_definitions(-Os -march=native -std=c++23)
 
